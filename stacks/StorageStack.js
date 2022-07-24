@@ -11,11 +11,10 @@ export function StorageStack({ stack, app }) {
   });
 
   // Create an S3 bucket
-const bucket = new Bucket(stack, "Uploads");
+  const bucket = new Bucket(stack, "Uploads");
 
   return {
     table,
-    bucket
-    
+    bucket,
   };
 }
